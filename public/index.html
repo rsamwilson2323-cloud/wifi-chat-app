@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WiFi Chat - Mini WhatsApp</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- JOIN SCREEN -->
+    <div id="joinBox" class="card">
+      <h2>📶 WiFi Chat</h2>
+
+      <div class="linkBox">
+        <div><b>Open this on phone:</b></div>
+        <div id="phoneLink">Loading...</div>
+        <button id="copyBtn" class="copyBtn">Copy Link</button>
+      </div>
+
+      <input id="username" placeholder="Enter username..." />
+      <input id="room" placeholder="Room name (ex: family)" value="public" />
+
+      <button id="joinBtn">Join</button>
+      <p class="hint">Phone + Laptop same WiFi ✅</p>
+    </div>
+
+    <!-- CHAT SCREEN -->
+    <div id="chatBox" class="card hidden">
+      <div class="topbar">
+        <div>
+          <b id="roomTitle">Room:</b>
+          <span id="meTitle"></span>
+        </div>
+        <div class="users">
+          <b>Users:</b> <span id="usersList">-</span>
+        </div>
+      </div>
+
+      <div id="messages" class="messages"></div>
+
+      <div class="toolbar">
+        <button class="emoji" data-e="😀">😀</button>
+        <button class="emoji" data-e="😂">😂</button>
+        <button class="emoji" data-e="❤️">❤️</button>
+        <button class="emoji" data-e="🔥">🔥</button>
+        <button class="emoji" data-e="👍">👍</button>
+
+        <input type="file" id="fileInput" />
+      </div>
+
+      <div class="inputbar">
+        <input id="msgInput" placeholder="Type message..." />
+        <button id="sendBtn">Send</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
