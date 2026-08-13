@@ -27,9 +27,8 @@ A lightweight real-time messaging application that allows users connected to the
 ---
 
 ## 📂 Project Structure
-
-`
-wifi-chat-app
+```
+wifi-chat-app/
 │
 ├── uploads/
 ├── public/
@@ -40,7 +39,7 @@ wifi-chat-app
 ├── run.bat
 ├── README.md
 └── LICENSE
-`
+```
 ---
 
 ## ⚙️ Installation
