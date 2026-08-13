@@ -28,6 +28,7 @@ A lightweight real-time messaging application that allows users connected to the
 
 ## 📂 Project Structure
 
+`
 wifi-chat-app
 │
 ├── uploads/
